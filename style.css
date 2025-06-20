@@ -1,0 +1,277 @@
+/* Basic Reset and Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Example font, choose something professional */
+    line-height: 1.6;
+    margin: 0; /* Remove default body margin */
+    padding: 0;
+    color: #333; /* Default text color */
+    background-color: #f4f4f4; /* Light background for the page */
+    scroll-behavior: smooth; /* Enables smooth scrolling for # links */
+}
+
+/* Container for centering and limiting width */
+.container {
+    max-width: 1000px; /* Max width of content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding on the sides */
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 0; /* Add vertical padding to sections */
+    text-align: center; /* Center text within sections */
+}
+
+/* Example: Alternate background color for sections */
+#about {
+    background-color: #fff; /* White background for About section */
+}
+
+/* Header and Navigation */
+.site-header {
+    background-color: #2c3e50; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 15px 0;
+    position: sticky; /* Makes header sticky */
+    top: 0; /* Sticks to the top */
+    z-index: 1000; /* Ensures header is above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.site-header .container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out title and nav */
+    align-items: center; /* Vertically align items */
+}
+
+.site-title {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.site-nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange links in a row */
+}
+
+.site-nav li {
+    margin-left: 20px; /* Space between links */
+}
+
+.site-nav a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.site-nav a:hover {
+    color: #3498db; /* Example hover color */
+}
+
+/* Hero Section Styling (Example) */
+#hero {
+    background: url('placeholder-hero-bg.jpg') no-repeat center center/cover; /* Placeholder background image */
+    color: #fff; /* White text for hero */
+    padding: 100px 20px; /* More padding for height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Minimum height of the hero section */
+    position: relative; /* Needed for overlay */
+}
+
+#hero::before { /* Optional: Add an overlay for text readability */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+#hero .container {
+     position: relative; /* Bring container content above overlay */
+     z-index: 2;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+/* About Section Specifics */
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: left; /* Align paragraphs to the left */
+    max-width: 800px; /* Limit paragraph width for readability */
+    margin-left: auto;
+    margin-right: auto; /* Center paragraph block */
+}
+
+.tagline {
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 40px auto; /* Add space above/below */
+    color: #007bff; /* Example accent color */
+    max-width: 700px; /* Limit width */
+    text-align: center; /* Center the quote */
+    padding: 0 20px;
+    position: relative; /* For potential quote marks styling */
+}
+
+/* Style for the Call to Action Buttons */
+.cta-button {
+    display: inline-block; /* Allows padding and margin */
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    border: none; /* Remove default button border if using button element */
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for a secondary button style */
+.cta-button.secondary {
+    background-color: #6c757d; /* Example secondary color */
+    margin-left: 10px; /* Add space if next to a primary button */
+}
+
+.cta-button.secondary:hover {
+     background-color: #545b62; /* Darker grey on hover */
+}
+
+
+/* Company Details Styling */
+.company-details {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd; /* Separator line */
+    text-align: left; /* Align details list left */
+    max-width: 800px; /* Match paragraph width */
+    margin-left: auto;
+    margin-right: auto; /* Center the block */
+}
+
+.company-details h3 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px;
+}
+
+.company-details ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+.company-details li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+.company-details li strong {
+    color: #333; /* Make the labels slightly darker */
+    display: inline-block;
+    min-width: 100px; /* Align the values */
+}
+
+.company-details a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.company-details a:hover {
+    text-decoration: underline;
+}
+
+.company-details .note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Placeholder section styling */
+#services, #contact {
+    background-color: #e9ecef; /* Light grey background */
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #343a40; /* Dark footer background */
+    color: #fff; /* White text */
+    padding: 30px 0;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+/* ==================== Responsive Design (Basic Example) ==================== */
+@media (max-width: 768px) {
+    .site-header .container {
+        flex-direction: column; /* Stack title and nav vertically */
+    }
+
+    .site-nav ul {
+        margin-top: 15px;
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center; /* Center links */
+    }
+
+    .site-nav li {
+        margin: 5px 0; /* Adjust space between stacked links */
+    }
+
+    #hero h1 {
+        font-size: 2em; /* Smaller font size on small screens */
+    }
+
+    #about h2 {
+        font-size: 2em;
+    }
+
+    #about p, .tagline {
+         font-size: 1em; /* Smaller text on small screens */
+         text-align: center; /* Center paragraphs on small screens */
+    }
+
+    .company-details {
+        text-align: center; /* Center details block */
+    }
+
+     .company-details li strong {
+        min-width: auto; /* Remove min-width on small screens */
+        display: block; /* Stack label and value */
+        margin-bottom: 5px;
+    }
+}
+
