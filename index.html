@@ -1,77 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Broadsage</title>
-    <!-- Link to your stylesheet -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
-        /* Basic inline styles for demonstration - ideally use a separate style.css file */
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 0;
-            text-align: center; /* Center content for a simple landing page look */
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto; /* Center the container */
-            padding: 20px;
-            border: 1px solid #ddd; /* Just a visual border */
-            border-radius: 8px;
-            background-color: #f9f9f9;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #007bff; /* Example button color */
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        .cta-button:hover {
-            background-color: #0056b3; /* Darker on hover */
-        }
-    </style>
-</head>
 <body>
+    <header>
+        <nav>
+            <!-- Logo/Site Title -->
+            <div class="logo">Broadsage</div>
+            <!-- Navigation Links -->
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="container">
-        <h1>Welcome to Broadsage!</h1>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Broadsage!</h1>
+            <p>Your partner in [Your Industry/Solution].</p>
+            <a href="#services" class="cta-button">See Our Services</a>
+        </div>
+    </section>
 
-        <p>
-            We are absolutely thrilled to welcome you to Broadsage! We're a brand new startup dedicated to [briefly mention your startup's core focus or mission - e.g., "revolutionizing the way teams collaborate," "providing innovative solutions for sustainable living," "connecting local businesses with their communities"].
-        </p>
+    <section id="about">
+        <h2>About Broadsage</h2>
+        <p>Our story and mission...</p>
+        <!-- More about content -->
+    </section>
 
-        <p>
-            At Broadsage, our goal is to [mention a key benefit or outcome - e.g., "make your workflow smoother," "help you reduce your environmental footprint," "boost your local economy"]. We're passionate about [mention a key value or area of expertise - e.g., "innovation," "community," "simplicity," "impact"].
-        </p>
+    <section id="services">
+        <h2>What We Offer</h2>
+        <div class="service-item">...</div>
+        <div class="service-item">...</div>
+        <!-- List out services -->
+    </section>
 
-        <p>
-            This is just the beginning of our journey, and we're excited to have you with us. We're busy building something special and can't wait to share more with you soon.
-        </p>
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Contact information...</p>
+        <!-- Contact Form Placeholder (will need external service) -->
+        <form action="[URL of your form handler]">
+             <!-- Form fields -->
+        </form>
+    </section>
 
-        <!-- Placeholder for a call to action -->
-        <!-- You can change the link and the text -->
-        <a href="#" class="cta-button">Learn More About What We Do</a>
-        <!-- Or maybe a link to a contact page, or a signup form -->
-        <!-- <a href="#" class="cta-button">Get Updates</a> -->
+    <footer>
+        <p>&copy; 2023 Broadsage. All rights reserved.</p>
+        <!-- Social media links etc. -->
+    </footer>
 
-        <p style="margin-top: 30px; font-size: 0.9em; color: #777;">
-            Stay tuned for exciting updates!
-        </p>
-    </div>
-
+    <!-- Link to your JavaScript file -->
+    <!-- <script src="script.js"></script> -->
 </body>
-</html>
